@@ -9,16 +9,16 @@ Example
 You can render the current year in your ERb views like so:
 
   <%= current_year -%>
-  
-If you want to provide a year range, you can use year_range and provide the 
-year that you started. 
+
+If you want to provide a year range, you can use year_range and provide the
+year that you started.
 
   Example: With the assumption that the current year was 2008
-  
+
   <%= year_range(2005) -%>     # => 2005-2008
   <%= year_range(2008) -%>     # => 2008 (just returns current year)
 
-You can access the code here: 
+You can access the code here:
 
 * http://github.com/robbyrussell/year_after_year/
 
