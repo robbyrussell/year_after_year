@@ -1,0 +1,15 @@
+YearAfterYear
+==============
+
+This plugin allows you to keep your copyright year up-to-date.
+
+Example
+=======
+
+You can render the current year in your ERb views like so:
+
+  <%= current_year -%>
+
+You can access the code here: http://github.com/robbyrussell/year_after_year/
+
+Copyright (c) 2008 Robby Russell, released under the MIT license
