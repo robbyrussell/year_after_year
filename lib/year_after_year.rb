@@ -6,12 +6,8 @@ module PlanetArgon
       Time.now.strftime('%Y')
     end
 
-    def year_range(start_year)
-      if start_year.to_s == current_year
-        current_year
-      else
-        start_year.to_s + '-' + current_year
-      end
+    def year_range( start_year = Date.today().year )
+      [start_year, Date.today().year].sort.uniq.join('-')
     end
   end
 end
