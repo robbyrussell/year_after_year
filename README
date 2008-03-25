@@ -10,6 +10,12 @@ You can render the current year in your ERb views like so:
 
   <%= current_year -%>
 
-You can access the code here: http://github.com/robbyrussell/year_after_year/
+You can access the code here: 
+
+* http://github.com/robbyrussell/year_after_year/
+
+Feature Requests / Bugs
+
+* http://planetargon.lighthouseapp.com/projects/5187-open-source-projects
 
 Copyright (c) 2008 Robby Russell, released under the MIT license
