@@ -3,11 +3,11 @@ module PlanetArgon
     # Renders the current year.
     #  Example: 2008
     def current_year
-      Time.now.strftime('%Y')
+      Time.now.year
     end
 
-    def year_range( start_year = Date.today().year )
-      [start_year, Date.today().year].sort.uniq.join('-')
+    def year_range( start_year = current_year )
+      [start_year, current_year].sort.uniq.join('-')
     end
   end
 end

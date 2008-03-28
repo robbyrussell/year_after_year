@@ -7,7 +7,7 @@ describe PlanetArgon::YearAfterYear, 'current_year' do
   end
 
   it 'should return the current year example: 2006' do
-    current_year.should == '2006'
+    current_year.should == 2006
   end
 end
 
