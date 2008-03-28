@@ -9,6 +9,10 @@ describe PlanetArgon::YearAfterYear, 'current_year' do
   it 'should return the current year example: 2006' do
     current_year.should == 2006
   end
+
+  it 'should become a string when substituted in a string' do
+    "This is #{current_year}".should == 'This is 2006'
+  end
 end
 
 describe PlanetArgon::YearAfterYear, 'year_range()' do
