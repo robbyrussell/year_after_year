@@ -2,8 +2,7 @@ require 'lib/year_after_year'
 
 describe PlanetArgon::YearAfterYear, 'current_year' do
   before(:each) do
-    t = mock('Time')
-    Time.stub!(:now).and_return( Time.parse( 'Sun Jan 27 15:31:39 -0800 2006' ) )
+    Time.stub!(:now).and_return( Time.local(2006, 12, 25) )
   end
 
   it 'should return the current year example: 2006' do
@@ -17,12 +16,15 @@ end
 
 describe PlanetArgon::YearAfterYear, 'year_range()' do
   before(:each) do
-    t = mock('Time')
-    Time.stub!(:now).and_return( Time.parse( 'Sun Jan 27 15:31:39 -0800 2006' ) )
+    Time.stub!(:now).and_return( Time.local(2006, 12, 25) )
   end
 
   it 'should return a range of years when provided a start year' do
     year_range(2004).should == '2004-2006'
+  end
+  
+  it "should return a range of years with the specified separator" do
+    year_range(2004, '&mdash;').should == '2004&mdash;2006'
   end
 
   it 'should return only the current year if the start year is the same' do
