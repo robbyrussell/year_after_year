@@ -15,8 +15,9 @@ year that you started.
 
   Example: With the assumption that the current year was 2008
 
-  <%= year_range(2005) -%>     # => 2005-2008
-  <%= year_range(2008) -%>     # => 2008 (just returns current year)
+  <%= year_range(2005) -%>     				# => 2005-2008
+  <%= year_range(2005, '&mdash;') -%> # => 2005&mdash;2008
+  <%= year_range(2008) -%>     				# => 2008 (just returns current year)
 
 You can access the code here:
 
