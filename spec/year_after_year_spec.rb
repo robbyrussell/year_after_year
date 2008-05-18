@@ -20,14 +20,15 @@ describe PlanetArgon::YearAfterYear, 'year_range()' do
   end
 
   it 'should return a range of years when provided a start year' do
-    year_range(2004).should == '2004-2006'
+    current_year_range(2004).should == '2004-2006'
   end
   
   it "should return a range of years with the specified separator" do
-    year_range(2004, '&mdash;').should == '2004&mdash;2006'
+    current_year_range(2004, '&mdash;').should == '2004&mdash;2006'
   end
 
   it 'should return only the current year if the start year is the same' do
+    current_year_range(2006).should == '2006'
     year_range(2006).should == '2006'
   end
 end
